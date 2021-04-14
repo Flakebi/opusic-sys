@@ -136,6 +136,7 @@ fn build() {
 
     println!("cargo:rustc-link-lib=static=opus");
     println!("cargo:rustc-link-search=native={}/lib", out_dir.display());
+    println!("cargo:rustc-link-search=native={}/lib64", out_dir.display());
 }
 
 fn run() {
